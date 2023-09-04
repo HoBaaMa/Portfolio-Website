@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block body %}
+<header class="header">
+    <a href="{{ url_for('main_page') }}" class="logo">Ehab S.</a>
+    <nav class="navbar">
+        <a href="{{ url_for('main_page') }}">Home</a>
+        <a href="#" class="active">About</a>
+        <a href="{{ url_for('contatc_page') }}">Contact</a>
+    </nav>
+</header>
+<section class="content">
+    <div class="abtme">
+        <h1>About Me</h1>
+        <p>Hello, I'm Ehab Sadiq Fawzy, a Computer Science student at Nahda University in Bein Suef. I am passionate
+            about technology, programming, and the exciting world of computers.</p>
+        <p>As a student, I am constantly exploring and learning about various aspects of computer science. I enjoy
+            delving into complex algorithms, problem-solving, and developing innovative software solutions.</p>
+        <p>As a blogger, I aim to provide valuable information, reviews, tutorials, and tips to fellow gaming and app
+            enthusiasts. Whether you're a seasoned gamer or a beginner exploring the world of mobile apps, my blog is a
+            resource for you.</p>
+        <p>Moreover, I have developed a keen interest in Search Engine Optimization (SEO) and E-Marketing. I understand
+            the importance of effectively promoting digital content and utilizing strategic marketing techniques to
+            reach a wider audience.</p>
+        <p>Feel free to connect with me through my blog or social media channels to explore and discuss various topics
+            related to computer science, technology, blogging, SEO, and digital marketing. Let's learn and grow
+            together!</p>
+        <a href="{{ url_for('contatc_page') }}"><button>CONTACT ME</button></a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Ehab S. All rights reserved.</p>
+</footer>
+{% endblock %}

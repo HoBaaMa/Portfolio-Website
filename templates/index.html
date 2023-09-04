@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<header class="header">
+
+    <a href="#" class="logo">Ehab S.</a>
+
+    <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="{{ url_for('aboutMe_page') }}">About</a>
+        <a href="{{ url_for('contatc_page') }}">Contant</a>
+    </nav>
+</header>
+
+<section class="home">
+    <div class="home-content">
+        <h1>Hi, I'm Ehab Sadiq</h1>
+        <h3>Frontend Developer</h3>
+        <p>Welcome to my portfolio website! I'm Ehab Sadiq, a Frontend Developer passionate about creating immersive web
+        experiences. With expertise in HTML, CSS, and JavaScript, I specialize in crafting visually appealing and user-friendly
+        websites.</p>
+        <div class="btn-box">
+            <a href="https://www.linkedin.com/in/ehab-sadiq/" target="_blank">Hire Me</a>
+            <a href="{{ url_for('contatc_page') }}">Let's Talk</a>
+        </div>
+    </div>
+
+    <div class="home-sci">
+
+        <a href="https://www.facebook.com/ehapmaged888/" target="_blank"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.instagram.com/ehap_maged/" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.linkedin.com/in/ehab-sadiq/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+
+    </div>
+
+</section>
+
+{% endblock %}

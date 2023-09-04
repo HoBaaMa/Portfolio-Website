@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block body %}
+    <header class="header">
+        <a href="{{ url_for('main_page') }}" class="logo">Ehab S.</a>
+        <nav class="navbar">
+            <a href="{{ url_for('main_page') }}">Home</a>
+            <a href="{{ url_for('aboutMe_page') }}">About</a>
+            <a href="#" class="active">Contact</a>
+        </nav>
+    </header>
+
+
+
+    <div class="content">
+        <h1>Contact Me</h1>
+        <p>Feel free to reach out to us with any questions or inquiries.</p>
+        <form action="mailto:phacker935@gmail.com" class="form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+{% endblock %}
